@@ -6,6 +6,7 @@
             [re-frame.core :as re-frame])
   (:import (goog.history Html5History)))
 
+
 (defonce history
   (doto (Html5History.)
     (.setPathPrefix js/window.location.protocol "//" js/window.location.host)

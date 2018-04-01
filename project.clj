@@ -1,15 +1,15 @@
 (defproject client-side-routing "SNAPSHOT"
   :dependencies [[org.clojure/clojure "1.9.0"]
-                 [org.clojure/clojurescript "1.9.946"]
+                 [org.clojure/clojurescript "1.10.238"]
                  [org.clojure/tools.logging "0.4.0"]
                  [reagent "0.7.0"]
-                 [re-frame "0.10.2"]
+                 [re-frame "0.10.5"]
                  [secretary "1.2.3"]
                  [compojure "1.6.0"]
                  [ring "1.6.3"]
                  [environ "1.1.0"]]
 
-  :plugins [[lein-cljsbuild "1.1.5"]]
+  :plugins [[lein-cljsbuild "1.1.7"]]
 
   :min-lein-version "2.5.3"
 
@@ -22,11 +22,11 @@
 
   :repl-options {:nrepl-middleware [cemerick.piggieback/wrap-cljs-repl]}
 
-  :profiles {:dev {:dependencies [[binaryage/devtools "0.9.7"]
-                                  [figwheel-sidecar "0.5.14"]
+  :profiles {:dev {:dependencies [[binaryage/devtools "0.9.9"]
+                                  [figwheel-sidecar "0.5.15"]
                                   [com.cemerick/piggieback "0.2.2"]]
 
-                   :plugins      [[lein-figwheel "0.5.14"]
+                   :plugins      [[lein-figwheel "0.5.15"]
                                   [lein-environ "1.1.0"]]}}
 
   :cljsbuild {:builds [{:id           "dev"
